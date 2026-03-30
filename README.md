@@ -1,3 +1,3 @@
 # iq-prototypes
-Fourth iQ Manager App — Interactive Prototypes
+Fourth iQ Manager App — Interactive Prototypes 
  
