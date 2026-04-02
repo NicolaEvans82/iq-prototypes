@@ -12,21 +12,23 @@ body { font-family: 'Inter', -apple-system, sans-serif; background: #002747; min
 h1 { font-size: 32px; font-weight: 800; color: #FFF; margin-bottom: 8px; }
 .sub { font-size: 15px; color: #7A8B9E; margin-bottom: 12px; }
 .device-note { font-size: 12px; color: #4A5568; margin-bottom: 36px; display: flex; align-items: center; justify-content: center; gap: 8px; }
-.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; }
 .card { background: #001D36; border: 1px solid #0C4A7D; border-radius: 16px; padding: 26px 22px; text-align: left; transition: all .2s; cursor: pointer; text-decoration: none; }
 .card:hover { border-color: #00B69F; transform: translateY(-3px); box-shadow: 0 8px 32px rgba(0,182,159,.15); }
 .badge { display: inline-flex; padding: 3px 10px; border-radius: 6px; font-size: 10px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 12px; }
 .v1 .badge { background: #00897B20; color: #00897B; }
 .v2 .badge { background: #00B69F20; color: #00B69F; }
 .v3 .badge { background: #FF3B5C20; color: #FF3B5C; }
-.v4 .badge { background: #0C4A7D40; color: #5B9BD5; }
 .card h2 { font-size: 17px; font-weight: 700; color: #FFF; margin-bottom: 6px; line-height: 1.3; }
 .card p { font-size: 12px; color: #7A8B9E; line-height: 1.5; margin-bottom: 14px; }
 .cta { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; }
 .v1 .cta { color: #00897B; }
 .v2 .cta { color: #00B69F; }
 .v3 .cta { color: #FF3B5C; }
-.v4 .cta { color: #5B9BD5; }
+.allclear { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 9px; font-weight: 600; margin-top: 8px; }
+.v1 .allclear { background: #00897B15; color: #00897B; }
+.v2 .allclear { background: #00B69F15; color: #00B69F; }
+.v3 .allclear { background: #FF3B5C15; color: #FF3B5C; }
 .footer { margin-top: 36px; font-size: 12px; color: #4A5568; }
 .ipad-mini { display: inline-block; width: 44px; height: 32px; background: #000; border-radius: 6px; padding: 3px; margin-bottom: -8px; margin-right: 4px; }
 .ipad-mini-screen { width: 100%; height: 100%; background: #0C4A7D; border-radius: 3px; }
@@ -36,7 +38,7 @@ h1 { font-size: 32px; font-weight: 800; color: #FFF; margin-bottom: 8px; }
 <body>
 <div class="container">
   <h1>Fourth iQ Manager App</h1>
-  <p class="sub">Interactive prototypes — 4 design directions</p>
+  <p class="sub">Interactive prototypes — 3 design directions</p>
   <div class="device-note">
     <span class="ipad-mini"><span class="ipad-mini-screen"></span></span>
     Optimised for iPad and desktop — presented in tablet frame
@@ -47,24 +49,21 @@ h1 { font-size: 32px; font-weight: 800; color: #FFF; margin-bottom: 8px; }
       <h2>Card-Based Dashboard</h2>
       <p>Familiar card layout with expandable actions, workflow deadlines, and AI suggestions. Closest to current product patterns.</p>
       <span class="cta">Open prototype →</span>
+      <div class="allclear">All Clear: Shift Report</div>
     </a>
     <a href="v2.html" class="card v2">
       <div class="badge">VERSION 2</div>
       <h2>Explicit Priority List</h2>
       <p>Numbered priority queue with split-panel detail view. Manager sees the full shape of their day before committing to any item.</p>
       <span class="cta">Open prototype →</span>
+      <div class="allclear">All Clear: What's Next</div>
     </a>
     <a href="v3.html" class="card v3">
       <div class="badge">VERSION 3</div>
       <h2>Dynamic Command Centre</h2>
       <p>Real-time decision engine with dominant priority panel, live performance strip, and state-adaptive interface.</p>
       <span class="cta">Open prototype →</span>
-    </a>
-    <a href="v4.html" class="card v4">
-      <div class="badge">VERSION 4</div>
-      <h2>Today Flow</h2>
-      <p>Flow-based experience centred on the today view. Guided action cards with business context, service deadlines, and performance snapshots.</p>
-      <span class="cta">Open prototype →</span>
+      <div class="allclear">All Clear: Live Dashboard</div>
     </a>
   </div>
   <p class="footer">Fourth Product · iQ Manager App Prototypes · Confidential</p>
